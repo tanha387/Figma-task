@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mazzard:wght@400;500;600;700&display=swap">
+   
+
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar">
+        
+        <ul class="navigation">
+            <div>
+                <img id="nav-image"src="./images/Group 1992.png">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Services <i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+            <li><a href="#about">Technologies</a></li>
+            <li><a href="#about">Case Study</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button id="nav-button">Hire Developer</button>
+          </ul>
+         
+
+    </div>
+    <h1 id="news">News & Articles</h1>
+    <hr id="hr">
+    <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="wrapper">
+        <!-- filter Items -->
+        <nav>
+          <div class="items">
+            <span class="item active" data-name="all">All</span>
+            <span class="item" data-name="bag">Development</span>
+            <span class="item" data-name="shoe">Busniess</span>
+            <span class="item" data-name="watch">Design</span>
+            <span class="item" data-name="camera">Word</span>
+            <span class="item" data-name="headphone">Creitivity</span>
+          </div>
+        </nav>
+        <!-- filter Images -->
+        <div class="gallery">
+          <div class="image" data-name="bag"><div class="user"><img src="images/book.jpg" alt=""  style="height: 200px;"><h3 style="margin-left: 10px;">Development</h3><p style="font-size: 12px; font-family: 'Mazzard', sans-serif;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempora dicta quibusdam autem doloremque inventore possimus. Repellat possimus facere obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</p></div></div>
+          <div class="image" data-name="headphone"><div class="user"><img src="images/bus1.jpg" alt=""  style="height: 200px;"><h3 style="margin-left: 10px;">Busniess</h3><p style="font-size: 12px; font-family: 'Mazzard', sans-serif;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempora dicta quibusdam autem doloremque inventore possimus. Repellat possimus facere obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</div></div>
+          <div class="image" data-name="camera"><div class="user"><img src="images/des7.jpg " alt=""  style="height: 200px;"><h3 style="margin-left: 10px;">Development</h3><p style="font-size: 12px; font-family: 'Mazzard', sans-serif;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempora dicta quibusdam autem doloremque inventore possimus. Repellat possimus facere obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</div></div>
+          <div class="image" data-name="shoe"><div class="user"><img src="images/dev2.jpg" alt=""  style="height: 200px;"><h3 style="margin-left: 10px;">Word</h3><p style="font-size: 14px;font-size: 12px; font-family: 'Mazzard', sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempora dicta quibusdam autem doloremque inventore possimus. Repellat possimus facere obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</div></div>
+          <div class="image" data-name="headphone"><div class="user"><img src="images/wor3.jpg" alt=""  style="height: 200px;"><h3 style="margin-left: 10px;">Design</h3><p style="font-size: 12px; font-family: 'Mazzard', sans-serif;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempora dicta quibusdam autem doloremque inventore possimus. Repellat possimus facere obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</div></div>
+          <div class="image" data-name="watch"><div class="user"><img src="images/book1.png" alt="" style="height: 200px;"><h3 style="margin-left: 10px;">Cretivity</h3><p style="font-size: 12px; font-family: 'Mazzard', sans-serif;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempora dicta quibusdam autem doloremque inventore possimus. Repellat possimus facere obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</div></div>
+          <div class="image" data-name="shoe"><div class="user"><img src="images/wor2.jpg" alt="" style="height: 200px;"><h3 style="margin-left: 10px;">Design</h3><p style="font-size: 12px; font-family: 'Mazzard', sans-serif;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempora dicta quibusdam autem doloremque inventore possimus. Repellat possimus facere obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</div></div>
+          <div class="image" data-name="camera"><div class="user"><img src="images/dev3.png" alt=""  style="height: 200px;"><h3 style="margin-left: 10px;">Word</h3><p style="font-size: 12px; font-family: 'Mazzard', sans-serif;padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit tempora dicta quibusdam autem doloremque inventore possimus. Repellat possimus facere obcaecati!Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</div></div>
+        </div>
+      </div>
+      <!-- fullscreen img preview box -->
+      <div class="preview-box">
+        <div class="details">
+          <span class="title">Image Category: <p></p></span>
+          <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box"><img src="" alt=""></div>
+      </div>
+      <div class="shadow"></div>
+
+      <div id="adder" style="display: flex;">
+       
+      
+            <div>
+                <img  id="img-grp" src="./images/Mask group.png">
+            </div>
+            <div class="div2">
+                <h2 id="feature">Get all latest features from Us</h2>
+                <p id="spam">Dont worry we are going to spam you</p>
+                <div style="display: flex;">
+                    <input type="email" name="" id="email">
+                    <img id="png" src="./images/Group 2839.png">
+                </div>
+             
+                
+
+        </div>
+        <div id="back">
+
+        </div>
+      </div>
+    
+     <div id="footer" style="display: flex;">
+<div>
+    <img style="margin-top: 150px;margin-left: 150px;" src='./images/Group 1992.png '>
+    <p style="color: aliceblue;margin-left: 190px;margin-top: 20px;">Social Links</p>
+    <div style="margin-left: 150px;margin-top: 30px;">
+        <img src="./images//Group 1311.png">
+        <img src="./images/Group 1312 (1).png">
+        <img src="./images//Group 1310.png">
+        <img src="./images//Group 1303.png">
+        <img src="./images//Group 1309.png">
+
+    </div>
+    <div style="display: flex;margin-top: 60px;margin-left: 110px;">
+        <p style="color: aliceblue;font-size: 14px;padding-right: 10px;">FAQ</p>
+        <p style="color: aliceblue;font-size: 14px;padding-right: 10px;">Send Feedback</p>
+        <p style="color: aliceblue;font-size: 14px;padding-right: 10px;">Privacy</p>
+        <p style="color: aliceblue;font-size: 14px;padding-right: 10px;">Terms</p>
+    </div>
+   
+</div>
+<div style="margin-top: 150px;margin-left: 260px;">
+<p  style="color: aliceblue;font-size: 16px;margin-bottom: 30px;">Home</p>
+<p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Contact Us</p>
+<p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">About US</p>
+<p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Services</p>
+<p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Technologies</p>
+<p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Case Study</p>
+<p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">News Articles</p>
+</div>
+
+    <div style="margin-top: 150px;margin-left: 260px;">
+        <p  style="color: aliceblue;font-size: 16px;margin-bottom: 30px;">Development Services</p>
+        <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Web Application Development</p>
+        <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Custom Service Development</p>
+        <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Services Development</p>
+        <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Technologies Development</p>
+        <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Case Study</p>
+        <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Testing &QA</p>
+        </div>
+>
+
+    <div>
+        <div style="margin-top: 150px;margin-left: 260px;">
+            <p  style="color: aliceblue;font-size: 16px;margin-bottom: 30px;">Hire Dedicated Development </p>
+            <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Web Application Development</p>
+            <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Custom Service Development</p>
+            <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Services Development</p>
+            <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Technologies Development</p>
+            <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Case Study</p>
+            <p  style="color: aliceblue;font-size: 14px;margin-bottom: 30px;">Testing &QA</p>
+            </div>
+    
+</div>
+     </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
