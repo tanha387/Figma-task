@@ -287,11 +287,7 @@ body{
 }
 
 
-#img-grp {
-  margin-left: 500px; /* Center the image horizontally */
-  margin-right: auto; /* Center the image horizontally */
-  margin-top: 25px; /* Adjusted for spacing */
-}
+
 
 #feature {
   font-size: 32px;
@@ -317,9 +313,9 @@ body{
 }
 
 .div2 {
-  width: 80%; /* Adjusted for responsiveness */
-  max-width: 689px; /* Added max-width for larger screens */
-  margin-right: 400px;
+  width: 100%; /* Adjusted for responsiveness */
+
+
   margin-top: 20px; /* Adjusted for spacing */
   border-radius: 20px;
   background-color: #fff;
@@ -342,17 +338,22 @@ body{
   border-color: #e1e4e7;
   background-color: rgba(78, 73, 182, 0.1);
 }
+#adder{
+  margin: 10px auto;
+  max-width: 1100px;
 
+}
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   #adder {
    
     flex-direction: column;
     align-items: center;
+   
 
   }
   #img-grp{
-    margin-left: 50px;
+   
     width: 50%;
   }
 
@@ -361,7 +362,7 @@ body{
   #email,
 
     .div2 {
-      width: 90%; /* Adjusted width for responsiveness */
+      width: 500px; /* Adjusted width for responsiveness */
       max-width: 100%; /* Ensure elements don't overflow on smaller screens */
       margin-right: auto; /* Center the element horizontally */
       margin-left: auto; /* Center the element horizontally */
@@ -397,7 +398,7 @@ body{
       flex-direction: column;
       align-items: center;
       font-size: 14px; /* Adjusted font size for smaller screens */
-      margin-top: 50px;
+    
     }
     
     #footer > div {
@@ -408,7 +409,7 @@ body{
   /* Media query for screens narrower than 550px */
   @media (max-width: 550px) {
     #footer {
-      #footer {
+     
         width: 100%; /* Adjusted width for screens narrower than 270px */
         padding: 0; /* Adjust padding for narrower screens */
         font-size: 6px; /* Adjusted font size for very small screens */
@@ -422,9 +423,9 @@ body{
         align-items: center; /* Align items in column layout */
       }
       #footer > div {
-        margin: 5px 0; /* Adjust margin for very small screens */
+        margin:  0; /* Adjust margin for very small screens */
       }
     }
     
-  }
+  
   
