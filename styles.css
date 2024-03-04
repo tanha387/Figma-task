@@ -1,169 +1,113 @@
-/* CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Mazzard', sans-serif !important;
-    background-color: #F4F3FEB2;
-}
-
-
 #navbar {
-    background-color: #f8f9fa;
-    padding: 10px;
+  background-color:azure;
+  color: rgb(17, 1, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .navigation li {
-    margin-left: 10px;
+  margin-right: 20px;
 }
 
-.navigation li:first-child {
-    margin-left: 0;
-}
+
 
 .navigation li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 15px;
-  
-font-size: 16px;
-font-weight: 500;
-line-height: 18px;
-letter-spacing: 0em;
-text-align: left;
-
-}
-
-#nav-image {
-    height: auto;
-    width: 169px;
-    margin-right: 200px;
-    margin-left: 135px;
-    margin-top: 22px;
+  text-decoration: none;
+  color: rgb(15, 0, 0);
 }
 
 #nav-button {
-    background-color: black;
-    color: #e2e2e2;
-    height: 46px;
-    width: auto; 
-    padding: 0 20px; 
-    margin-top: 16px;
-    margin-left: 500px;
-border-radius: 6px; }
-
-
-/* Media query for responsiveness */
-@media screen and (max-width: 768px) {
-    .navigation {
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .navigation li {
-        margin-left: 0;
-        margin-bottom: 5px;
-    }
-
-    #nav-image {
-        width: 100%; 
-        margin-right: 0; 
-        margin-left: 0; /* Remove margin for smaller screens */
-    }
-
-    #nav-button {
-        margin: 10px auto; /* Center the button horizontally and provide vertical spacing */
-    }
-    
+  background-color: #0f0f0f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f8f9fa;
-    min-width: 160px;
- 
-    z-index: 1;
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navigation {
+    flex-direction: column;
+  }
+  
+  .navigation li {
+    margin: 10px 0;
+    margin-right: 0; /* Adjust margin for better spacing */
+  }
 }
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+body{
+  font-family: 'Mazzard', sans-serif !important;
+  background-color: #F4F3FEB2;
+  max-width: 2440px;
 }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 #news {
-    width: 90%; 
-    max-width: 441px;
-    height: auto; 
-    margin: 10% auto; 
-    font-family: Mazzard, sans-serif; 
-    font-size: 6vw; 
-    font-weight: 600;
-    line-height: 60px ;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #101010;
+  width: 90%; 
+  max-width: 441px;
+  height: auto; 
+  margin: 10% auto; 
+  font-family: Mazzard, sans-serif; 
+  font-size: 6vw; 
+  font-weight: 600;
+  line-height: 60px ;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #101010;
 }
 
 @media (min-width: 768px) {
 
-    #news {
-        font-size: 3vw; /* Set a proportional font-size for larger screens */
-    }
+  #news {
+      font-size: 3vw; /* Set a proportional font-size for larger screens */
+  }
 }
 
 @media (min-width: 992px) {
- 
-    #news {
-        font-size: 36px;
-    }
+
+  #news {
+      font-size: 36px;
+  }
 }
 #hr {
-    width: 90%; 
-    max-width: 1170px;
-    margin-top: -15%; 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    border-color: #101010; 
-    border-radius: 20px; 
+  width: 90%;
+  max-width: 1170px;
+  margin-top: -15%; /* This seems like a large negative margin, might need adjustment */
+  align-items: center; /* This property is not applicable here, as it's for flex containers */
+  margin-bottom: 5%;
+  border-color: #101010;
+  border-radius: 20px;
+ 
 }
 
 @media (min-width: 768px) {
-    /* Adjust styles for medium-sized screens (tablets, small desktops) */
-    #hr {
-        margin-top: -10%; 
-        margin-bottom: 3%;
-    }
+  /* Adjust styles for medium-sized screens (tablets, small desktops) */
+  #hr {
+    margin-top: 30px; /* Adjusted margin for better positioning */
+    margin-bottom: 3%;
+    margin-left: auto; /* Reset margin to default (auto) for better responsiveness */
+    margin-right: auto; /* Center the element horizontally */
+  }
 }
 
-@media (min-width: 992px) {
-    /* Adjust styles for large screens (desktops) */
-    #hr {
-        margin-top: -5%; /* Adjust margin-top for large screens */
-        margin-bottom: 1%; /* Adjust margin-bottom for large screens */
-    }
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -342,104 +286,145 @@ body{
   }
 }
 
-#img-grp{
-    margin-left: 300px;
-    margin-top: 25px;
+
+#img-grp {
+  margin-left: 500px; /* Center the image horizontally */
+  margin-right: auto; /* Center the image horizontally */
+  margin-top: 25px; /* Adjusted for spacing */
 }
 
-#feature{
-  
-font-size: 32px;
-font-weight: 600;
-line-height: 40px;
-letter-spacing: 0em;
-text-align: left;
-width: 261px;
-height: 80px;
-margin-top: 91px;
-margin-left: 94px
-
-}
-#spam{
-    width: 261px;
-height: 18px;
-margin-top: 20px;
-margin-left: 94px;
-font-size: 14px;
-
-
-}
-.div2{
-    width: 589px;
-height: 317px;
-margin-top: 49px;
-left: 522px;
-border-radius: 20px;
-background-color: #fff;
-
-}
-#email{
-    width: 332px;
-height: 48px;
-margin-top: 30px;
-margin-left: 84px;
-border-radius: 12px;
-border-color: #e1e4e7;
-background-color:rgba(78, 73, 182, 0.1);
-;
-
-
+#feature {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center; /* Center the text */
+  width: 80%; /* Adjusted for responsiveness */
+  max-width: 589px; /* Added max-width for larger screens */
+  margin-top: 20px; /* Adjusted for spacing */
+  margin-left: auto; /* Center the text horizontally */
+  margin-right: auto; /* Center the text horizontally */
 }
 
+#spam {
+  width: 80%; /* Adjusted width for responsiveness */
+  max-width: 589px; /* Added max-width for larger screens */
+  height: 18px;
+  margin-top: 20px; /* Adjusted for spacing */
+  margin-left: auto; /* Center the text horizontally */
+  margin-right: auto; /* Center the text horizontally */
+  font-size: 14px;
+}
+
+.div2 {
+  width: 80%; /* Adjusted for responsiveness */
+  max-width: 689px; /* Added max-width for larger screens */
+  margin-right: 400px;
+  margin-top: 20px; /* Adjusted for spacing */
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px; /* Added padding for spacing */
+}
 #png{
-    margin-left: -50px;
-    width: 117px;
-}
-
-#back {
-    border: 2px solid rgba(146, 71, 241, 1);
-    width: 495px;
-    height: 392px;
-    position: relative; /* Adding position */
-    z-index:- 1; /* Setting z-index */
-    margin-left: 30px;
-    position: absolute;
-   margin-left: 1400px;
-   border-radius: 12px;
- 
-    z-index: -1;
-}
-@media screen and (max-width: 768px) {
-    #adder{
-        display: block;
-    }
-    #img-grp {
-        margin-left: 5%;
-    }
-
-    #feature, #spam, .div2, #email, #back {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    #png {
-        margin-left: -5%;
-    }
+  margin-left: -50px;
+  width: 117px;
 }
 
 
+#email {
+  width: 80%; /* Adjusted for responsiveness */
+  max-width: 732px; /* Added max-width for larger screens */
+  height: 48px;
+  margin-top: 20px; /* Adjusted for spacing */
+  margin-left: auto; /* Center the element horizontally */
+  margin-right: auto; /* Center the element horizontally */
+  border-radius: 12px;
+  border-color: #e1e4e7;
+  background-color: rgba(78, 73, 182, 0.1);
+}
 
-#footer{
-    width: 1940px;
-    height:538px;
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  #adder {
+   
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #img-grp{
+    margin-left: 50px;
+    width: 50%;
+  }
+
+  #feature,
+  #spam,
+  #email,
+
+    .div2 {
+      width: 90%; /* Adjusted width for responsiveness */
+      max-width: 100%; /* Ensure elements don't overflow on smaller screens */
+      margin-right: auto; /* Center the element horizontally */
+      margin-left: auto; /* Center the element horizontally */
+      max-height: 200px; /* Set max height for smaller screens */
+      font-size: 20px;
+    }
+  }
+  
+  #footer {
+    max-width:  2440px; 
+    height: auto; 
     background: linear-gradient(180deg, #080813 0%, #1A1836 100%);
-    margin-top: 150px;
-
-}
-
-
-
-.user{
-    height: 400px;
-    background-color:#fff;
-}
+    margin-top: 50px; 
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 20px; 
+  }
+  
+  #footer > div {
+    flex: 1; 
+    margin: 0 10px; 
+  }
+  
+  #footer p {
+    color: aliceblue;
+    font-size: 16px;
+    margin-bottom: 20px; 
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 100%) {
+    #footer {
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px; /* Adjusted font size for smaller screens */
+      margin-top: 50px;
+    }
+    
+    #footer > div {
+      margin: 10px 0; /* Adjusted margin for smaller screens */
+    }
+  }
+  
+  /* Media query for screens narrower than 550px */
+  @media (max-width: 550px) {
+    #footer {
+      #footer {
+        width: 100%; /* Adjusted width for screens narrower than 270px */
+        padding: 0; /* Adjust padding for narrower screens */
+        font-size: 6px; /* Adjusted font size for very small screens */
+        align-items: center;
+      }
+      #div3 {
+        margin-left: 40px; /* Adjusted margin for div3 */
+      }
+      #div4 {
+        flex-direction: column;
+        align-items: center; /* Align items in column layout */
+      }
+      #footer > div {
+        margin: 5px 0; /* Adjust margin for very small screens */
+      }
+    }
+    
+  }
+  
